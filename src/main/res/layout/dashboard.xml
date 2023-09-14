@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg6"
+    tools:context=".MainDashboard">
+
+
+    <!--    <View-->
+    <!--        android:id="@+id/dashboard"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:background="@drawable/bg_view" />-->
+
+    <TextView
+        android:id="@+id/dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Dashboard"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/GradientCircularProgressBar"
+        android:layout_width="289dp"
+        android:layout_height="261dp"
+        android:layout_below="@id/dashboard"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="59dp"/>
+
+    <TextView
+        android:id="@+id/battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="50%"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/historybtn"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/btn"
+        android:text="History"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/notifbtn"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/btn"
+        android:text="Check Status"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>
